@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+      <p style= "border: 4px solid green; padding: 15px;">
+        <svg class="notification-panel___icon" fill="#00703c" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+                          <path d="M25,6.2L8.7,23.2L0,14.1l4-4.2l4.7,4.9L21,2L25,6.2z"/>
+                        </svg>
+        You are now logged out
+      </p>
+
+
+
+      <fieldset class="nhsuk-fieldset">
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+          <h1 class="nhsuk-fieldset__heading">
+            Log in
+          </h1>
+        </legend>
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="address-line-1">
+            Email <span class="nhsuk-u-visually-hidden">line 1 of 2</span>
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-20" id="address-line-1" name="address-line-1" type="email">
+        </div>
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="address-line-1">
+            Password <span class="nhsuk-u-visually-hidden">line 2 of 2</span>
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-20" id="address-line-1" name="address-line-1" type="text">
+        </div>
+
+        </fieldset>
+
+
+        <a href="signed-in">
+          <button class="nhsuk-button" type="submit">
+            Log in
+          </button>
+        </a>
+
+
+
+    <!-- test code
+<p><a href="/test">Test page</a></p>
+
+ -->
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}
