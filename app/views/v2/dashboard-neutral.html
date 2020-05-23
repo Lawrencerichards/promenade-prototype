@@ -1,0 +1,129 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+<h2 class="nhsuk-heading-l">Hello Patty</h2>
+
+<p><b>D.O.B: </b> 30.12.1946 </p>
+<p><b>NHS No: </b> 450 557 7104</p>
+
+<a href="/v2/submit-prom-1">
+  <button class="nhsuk-button nhsuk-button--primary" type="submit">
+    Start a new submission
+  </button>
+</a>
+
+
+<br>
+
+  <a href="/v2/add-new-prom-1">
+    <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+      Add a new PROM
+    </button>
+  </a>
+
+<br>
+<br>
+
+<h2 class="nhsuk-heading-l">Your PROM scores over time</h2>
+
+<div class="nhsuk-table-responsive">
+  <table class="nhsuk-table">
+    <caption class="nhsuk-table__caption">PROM scores over time</caption>
+    <thead class="nhsuk-table__head">
+      <tr class="nhsuk-table__row">
+        <th class="nhsuk-table__header" scope="col">PROM Type</th>
+        <th class="nhsuk-table__header" scope="col">Date</th>
+        <th class="nhsuk-table__header" scope="col">Your score</th>
+      </tr>
+    </thead>
+    <tbody class="nhsuk-table__body">
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell"><a href="/v2/detailed-prom">PSAID</a></td>
+        <td class="nhsuk-table__cell ">29/02/20</td>
+        <td class="nhsuk-table__cell ">8.2</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">GAD-7</td>
+        <td class="nhsuk-table__cell ">29/02/20</td>
+        <td class="nhsuk-table__cell ">5.5</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">PSAID</td>
+        <td class="nhsuk-table__cell ">22/02/20</td>
+        <td class="nhsuk-table__cell ">7.5</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">GAD-7</td>
+        <td class="nhsuk-table__cell ">22/02/20</td>
+        <td class="nhsuk-table__cell ">6.7</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">PSAID</td>
+        <td class="nhsuk-table__cell ">29/02/20</td>
+        <td class="nhsuk-table__cell ">8.2</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">GAD-7</td>
+        <td class="nhsuk-table__cell ">29/02/20</td>
+        <td class="nhsuk-table__cell ">5.5</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">PSAID</td>
+        <td class="nhsuk-table__cell ">22/02/20</td>
+        <td class="nhsuk-table__cell ">7.5</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">GAD-7</td>
+        <td class="nhsuk-table__cell ">22/02/20</td>
+        <td class="nhsuk-table__cell ">6.7</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">PSAID</td>
+        <td class="nhsuk-table__cell ">29/02/20</td>
+        <td class="nhsuk-table__cell ">8.2</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">GAD-7</td>
+        <td class="nhsuk-table__cell ">29/02/20</td>
+        <td class="nhsuk-table__cell ">5.5</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">PSAID</td>
+        <td class="nhsuk-table__cell ">22/02/20</td>
+        <td class="nhsuk-table__cell ">7.5</td>
+      </tr>
+      <tr class="nhsuk-table__row">
+        <td class="nhsuk-table__cell">GAD-7</td>
+        <td class="nhsuk-table__cell ">22/02/20</td>
+        <td class="nhsuk-table__cell ">6.7</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+    <!-- test code
+<p><a href="/test">Test page</a></p>
+
+ -->
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

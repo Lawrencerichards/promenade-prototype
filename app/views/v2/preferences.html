@@ -1,0 +1,116 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/v2/add-new-prom-1">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back</a>
+      </div>
+
+
+      <div class="nhsuk-form-group">
+
+
+<h2 class="nhsuk-heading-l">Preferences</h2>
+
+    <br>
+
+
+          <div class="nhsuk-form-group">
+      <fieldset class="nhsuk-fieldset">
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+          <h1 class="nhsuk-fieldset__heading">
+            Share results with clinical team?
+          </h1>
+        </legend>
+        <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Why we’re collecting your data
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>As part of developing a new service we’re collecting data to help us stay in touch with you and your health. Only your health team will have access to your records.</p>
+            <p>We’ll be holding your name, your email and reported outcome measures.</p>
+            <p>Your data is being accessed only by clinicians directly involved in your care via a secure log-in process, and stored following guidelines on best practice for health data security.</p>
+            <p>The data will be accessible via your NHS Electronic Patient Records by health professionals. All data is stored within the UK and isn’t transferred elsewhere.</p>
+            <p>To see what data we have for you, ask your clinician to share it with you at your next consultation, or contact your clinician’s medical secretary.</p>
+            <p>To request your data to be removed from this trial service please contact Martyn by emailing martyn.evans@unboxed.co </p>
+          </div>
+        </details>
+        <div class="nhsuk-radios">
+          <input type="hidden" name="user[wants_data_shared_with_clinicians]" value="" />
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" type="radio" value="true" name="user[wants_data_shared_with_clinicians]" id="user_wants_data_shared_with_clinicians_true" />
+              <label class="nhsuk-label nhsuk-radios__label" for="user_wants_data_shared_with_clinicians_true">Yes</label>
+            </div>
+
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" type="radio" value="false" checked="checked" name="user[wants_data_shared_with_clinicians]" id="user_wants_data_shared_with_clinicians_false" />
+              <label class="nhsuk-label nhsuk-radios__label" for="user_wants_data_shared_with_clinicians_false">No</label>
+            </div>
+        </div>
+      </fieldset>
+      <br>
+      <fieldset class="nhsuk-fieldset">
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+          <h1 class="nhsuk-fieldset__heading">
+            Would you like to get notifications?
+          </h1>
+        </legend>
+        <span class="nhsuk-hint">
+          Notifications will be sent via email.
+        </span>
+        <div class="nhsuk-radios">
+          <input type="hidden" name="user[wants_prom_reminders]" value="" />
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" type="radio" value="true" checked="checked" name="user[wants_prom_reminders]" id="user_wants_prom_reminders_true" />
+              <label class="nhsuk-label nhsuk-radios__label" for="user_wants_prom_reminders_true">Yes</label>
+            </div>
+
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" type="radio" value="false" name="user[wants_prom_reminders]" id="user_wants_prom_reminders_false" />
+              <label class="nhsuk-label nhsuk-radios__label" for="user_wants_prom_reminders_false">No</label>
+            </div>
+        </div>
+      </fieldset>
+      <br>
+          <br>
+
+          <a href="dashboard-neutral">
+            <button class="nhsuk-button" type="submit">
+              Save changes
+            </button>
+          </a>
+    </div>
+
+
+
+
+
+    <!-- test code
+<p><a href="/test">Test page</a></p>
+
+ -->
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

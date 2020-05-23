@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/v2/new-prom-added">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back</a>
+      </div>
+
+
+      <div class="nhsuk-form-group">
+
+        <fieldset class="nhsuk-fieldset">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h1 class="nhsuk-fieldset__heading">
+              Start a new submission
+            </h1>
+          </legend>
+
+
+          <span class="nhsuk-hint">
+Which PROM would you like to submit a score for?
+          <div class="nhsuk-radios">
+            <br>
+
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-divider-1" name="example-divider" type="radio" value="nhsuk-login">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-divider-1">
+                PSAID
+              </label>
+            </div>
+
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-divider-2" name="example-divider" type="radio" value="government-verify">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-divider-2">
+                GAD-7
+              </label>
+            </div>
+
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-divider-4" name="example-divider" type="radio" value="create-account">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-divider-4">
+                PHQ-9
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+      </div>
+
+
+
+
+      <a href="submit-prom-2">
+        <button class="nhsuk-button" type="submit">
+          Next
+        </button>
+      </a>
+
+
+
+
+    <!-- test code
+<p><a href="/test">Test page</a></p>
+
+ -->
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

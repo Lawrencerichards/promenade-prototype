@@ -20,15 +20,24 @@
 <!-- Header goes inside the header block -->
 <!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
-  {{ header({
-    "service": {
-        "name": "Promenade prototype",
-        "href": "/"
+{{ header({
+    "showNav": "true",
+    "primaryLinks": [
+      {
+        "url"  : "#",
+        "label" : "Log out"
       },
-      "showNav": "false",
-      "showSearch": "false"
-    })
-  }}
+      {
+        'url' : '/v2/preferences',
+        'label' : 'Preferences'
+      },
+      {
+        'url'  : '/v2/reminder',
+        'label' : 'Reminders'
+      }
+    ]
+  })
+}}
 {% endblock %}
 
 <!-- Footer goes inside the footer block -->
